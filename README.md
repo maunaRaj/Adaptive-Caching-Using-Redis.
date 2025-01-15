@@ -12,7 +12,7 @@ Redis Setup: Use Redis to store cache entries, ensuring that Redis itself manage
 Integrate Machine Learning: ML can be utilized to adjust parameters or predict access patterns that influence how data is keyed into Redis.
 Redis Client in Python: Use a Redis library like redis-py to interact with Redis.
 
-Explanation
+Explanation:
 Redis Command Usage:
 set(key, value, ex=TTL): This stores a key-value pair in Redis with an expiration time, assisting with LRU/LFU management by naturally expiring less frequently accessed keys.
 get(key): Used not only to retrieve values but to signal access, influencing LRU policy by updating the key's usage timestamp.
